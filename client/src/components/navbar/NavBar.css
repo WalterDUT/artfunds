@@ -1,0 +1,129 @@
+.btn {
+  position: relative;
+  padding: 0.5em;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1rem;
+}
+
+/* .btn-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s ease-in-out;
+}
+
+.btn-nav::after {
+  bottom: 0;
+}
+
+.btn-nav:hover:after {
+  width: 70%;
+} */
+
+#main-nav {
+  background-color: #ffffff;
+}
+
+#main-nav .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto; */
+  padding: 1.2rem;
+}
+
+#main-nav #logo .home {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul li ul {
+  display: none;
+  position: absolute;
+}
+#navbar ul li:hover ul {
+  display: block;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 30px;
+  right: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#navbar ul li ul li .dropdown_account {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#navbar ul li ul li:hover {
+  background-color: #f4f4f4f4;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.button_connect {
+  width: 160px;
+  padding: 12px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  background-color: #fd607d;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  box-shadow: 0 3px 0 0 #93263a;
+}
+
+.button_disconnect {
+  width: 160px;
+  padding: 12px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  box-shadow: 0 3px 0 0 #93263a;
+}
+
+.button_connect:hover {
+  background-color: #ffe1de;
+  color: #fd607d;
+}
+
+.button_connect:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 0 #93263a;
+}
